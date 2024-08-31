@@ -61,7 +61,9 @@ const Card: React.FC = () => {
     <section className="bg-gray-100 h-screen pb-10 pt-10 md:pt-20 dark:bg-dark lg:pb-2 lg:pt-[40px] relative overflow-hidden">
       <div className="container">
         <div>
-          <h1 className="mx-auto text-center text-5xl font-bold uppercase text-slate-800 mb-10">Carousel Section</h1>
+          <h1 className="mx-auto text-center text-5xl font-bold uppercase text-slate-800 mb-10 dark:text-white">
+            Carousel Section
+          </h1>
         </div>
         <div className="relative overflow-hidden">
           {/* Carousel Container */}
@@ -120,7 +122,7 @@ const Card: React.FC = () => {
           {/* Prev Button */}
           <button
             onClick={handlePrev}
-            className="absolute left-0 md:left-4 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-gray-5 opacity-75 hover:opacity-100 duration-300 shadow-md dark:bg-dark-2"
+            className="absolute left-0 md:left-4 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-gray-5 opacity-75 hover:opacity-100 duration-300 shadow-md dark:bg-slate-600 hover:dark:opacity-100"
             disabled={currentIndex === 0}
           >
             <ChevronLeft />
@@ -128,7 +130,7 @@ const Card: React.FC = () => {
           {/* Next Button */}
           <button
             onClick={handleNext}
-            className="absolute right-0 md:right-4 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-gray-5 opacity-75 hover:opacity-100 duration-300 shadow-md dark:bg-dark-2"
+            className="absolute right-0 md:right-4 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-gray-5 opacity-75 hover:opacity-100 duration-300 shadow-md dark:bg-slate-600 hover:dark:opacity-100"
             disabled={currentIndex === totalItems - itemsToShow}
           >
             <ChevronRight />
