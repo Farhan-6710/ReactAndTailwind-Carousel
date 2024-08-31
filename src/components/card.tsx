@@ -58,7 +58,7 @@ const Card: React.FC = () => {
   };
 
   return (
-    <section className="h-screen pb-10 pt-10 md:pt-20 dark:bg-dark lg:pb-2 lg:pt-[40px] relative overflow-hidden">
+    <section className="bg-gray-100 h-screen pb-10 pt-10 md:pt-20 dark:bg-dark lg:pb-2 lg:pt-[40px] relative overflow-hidden">
       <div className="container">
         <div>
           <h1 className="mx-auto text-center text-5xl font-bold uppercase text-slate-800 mb-10">Carousel Section</h1>
